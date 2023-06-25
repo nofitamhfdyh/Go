@@ -20,4 +20,14 @@ func main() {
 
 	fmt.Println(name)
 	fmt.Println(eString)
+
+	// type declarations
+	type NOKTP string // tujuannya untuk membuat alias dari sebuah tipe data
+	type Married bool
+
+	var noKtpNop NOKTP = "7462175421732173912"
+	var marriedStatus Married = true
+
+	fmt.Println(noKtpNop)
+	fmt.Println(marriedStatus)
 }
