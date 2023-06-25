@@ -48,4 +48,25 @@ func main() {
 
 	fmt.Println(firstName)
 	fmt.Println(lastName)
+
+	//constant
+	const namaDepan string = "Nofita"
+	const namaBelakang = "Mahfudiyah"
+	//fmt.Println(namaDepan) --> walaupun const tidak dipakai, program akan tetap berjalan. beda dengan var
+	fmt.Println(namaBelakang)
+
+	//error constant -> value dari variabel pertama tidak bisa diubah jika memakai constant, beda dengan var
+	//namaDepan = "Nupnup"
+	//namaBelakang = "Nopnop"
+
+	//deklarasi multiple constant
+	const (
+		firstNama string = "Nofita"
+		lastNama         = "Mahfudiyah"
+		value            = 1000
+	)
+
+	fmt.Println(firstNama)
+	fmt.Println(lastNama)
+	fmt.Println(value)
 }
