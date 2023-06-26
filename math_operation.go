@@ -24,4 +24,17 @@ func main() {
 	fmt.Println(positive)
 
 	//operasi perbandingan
+	var name1 = "Zoya"
+	var name2 = "Zoya"
+
+	var result1 bool = name1 == name2
+
+	fmt.Println(result1)
+
+	var value1 = 100
+	var value2 = 200
+	fmt.Println(value1 > value2)
+	fmt.Println(value1 < value2)
+	fmt.Println(value1 == value2)
+	fmt.Println(value1 != value2)
 }
