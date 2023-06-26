@@ -37,4 +37,20 @@ func main() {
 	fmt.Println(value1 < value2)
 	fmt.Println(value1 == value2)
 	fmt.Println(value1 != value2)
+
+	//Boolean Operation
+	var nilaiAkhir = 90
+	var nilaiAbsensi = 80
+
+	//(1)cara 1
+	//var lulusNilaiAkhir bool = nilaiAkhir > 80
+	//var lulusNilaiAbsensi bool = nilaiAbsensi > 80
+	//fmt.Println(lulusNilaiAkhir)
+	//fmt.Println(lulusNilaiAbsensi)
+	//
+	//var lulus bool = lulusNilaiAkhir && lulusNilaiAbsensi
+	//fmt.Println(lulus)
+
+	//(2) cara 2
+	fmt.Println(nilaiAkhir >= 80 && nilaiAbsensi >= 80)
 }
