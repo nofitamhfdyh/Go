@@ -25,4 +25,14 @@ func main() {
 	fmt.Println(book)
 	fmt.Println(len(book))
 
+	//jika menggunakan perulangan for
+	biodata := make(map[string]string)
+	biodata["Nama"] = "Nofita"
+	biodata["Pekerjaan"] = "Programmer"
+	biodata["Alamat"] = "Blitar"
+
+	for key, value := range biodata {
+		fmt.Println(key, " = ", value)
+	}
+
 }
