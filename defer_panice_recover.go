@@ -14,7 +14,22 @@ func runApplication(value int) {
 	result := 10 / value
 	fmt.Println("Result ", result)
 }
+
+func endApp() {
+	fmt.Println("End App")
+}
+
+func runApp(error bool) {
+	defer endApp()
+	if error {
+		panic("ERROR")
+	}
+	fmt.Println("Aplikasi Berjalan")
+}
 func main() {
 	//defer func = penjadwalan eksekusi function setelah function lain dieksekusi. akan tetap dieksekusi walaupun func yg dieksekusi sebelumnya error
+	//panic func = digunakan utk menghentikan program dan dipakai ketika terjadi error saat program sedang berjalan. namun,ketika func panic dipanggil,program berhenti, tapi ketika menggunakan defer, maka defer func akan tetap dieksekusi
+
 	runApplication(10)
+	runApp(false)
 }
