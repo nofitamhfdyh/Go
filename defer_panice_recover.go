@@ -17,7 +17,10 @@ func runApplication(value int) {
 
 func endApp() {
 	message := recover()
-	fmt.Println("Error dengan message", message)
+	//(3)
+	if message != nil {
+		fmt.Println("Error dengan message", message)
+	}
 	fmt.Println("End App")
 }
 
@@ -38,5 +41,6 @@ func main() {
 	// recover func = digunakan utk menangkap panic. proses panic akan berhenti, shg program ttp berjalan
 
 	runApplication(10)
-	runApp(true)
+	runApp(true)       //outputnya akan nil jika isinya false dan tidak menggunakan if else (3)
+	fmt.Println("Eko") // utk cek, ketika func error, apakah aplikasi akan berhenti. output eko ttp keluar, jadi dipastikan kalau aplikasi teteap berjalan
 }
