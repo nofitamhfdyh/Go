@@ -16,11 +16,11 @@ func runApplication(value int) {
 }
 
 func endApp() {
-	//message := recover()
+	message := recover() //recover itu memang harus disimpannya di defer function
 	//(3)
-	//if message != nil {
-	//	fmt.Println("Error dengan message", message)
-	//}
+	if message != nil {
+		fmt.Println("Error dengan message", message)
+	}
 	fmt.Println("End App")
 }
 
