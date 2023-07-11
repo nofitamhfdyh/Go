@@ -16,6 +16,8 @@ func runApplication(value int) {
 }
 
 func endApp() {
+	message := recover()
+	fmt.Println("Error dengan message", message)
 	fmt.Println("End App")
 }
 
@@ -25,8 +27,9 @@ func runApp(error bool) {
 		panic("ERROR")
 	}
 
-	message := recover()
-	fmt.Println("Error dengan message", message) // outputnya tidak ada, karena berada di dalam 1 func yang error dan dibawah kode progam yang error. jadi tidak akan dieksekusi
+	//(1) dipindahkan ke func defer function
+	//message := recover()
+	//fmt.Println("Error dengan message", message) // outputnya tidak ada, karena berada di dalam 1 func yang error dan dibawah kode progam yang error. jadi tidak akan dieksekusi
 	fmt.Println("Aplikasi Berjalan")
 }
 func main() {
