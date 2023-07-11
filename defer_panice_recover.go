@@ -31,5 +31,5 @@ func main() {
 	//panic func = digunakan utk menghentikan program dan dipakai ketika terjadi error saat program sedang berjalan. namun,ketika func panic dipanggil,program berhenti, tapi ketika menggunakan defer, maka defer func akan tetap dieksekusi
 
 	runApplication(10)
-	runApp(false)
+	runApp(true)
 }
