@@ -16,5 +16,5 @@ func runApplication(value int) {
 }
 func main() {
 	//defer func = penjadwalan eksekusi function setelah function lain dieksekusi. akan tetap dieksekusi walaupun func yg dieksekusi sebelumnya error
-	runApplication(0)
+	runApplication(10)
 }
