@@ -24,11 +24,15 @@ func runApp(error bool) {
 	if error {
 		panic("ERROR")
 	}
+
+	message := recover()
+	fmt.Println("Error dengan message", message) // outputnya tidak ada, karena berada di dalam 1 func yang error dan dibawah kode progam yang error. jadi tidak akan dieksekusi
 	fmt.Println("Aplikasi Berjalan")
 }
 func main() {
 	//defer func = penjadwalan eksekusi function setelah function lain dieksekusi. akan tetap dieksekusi walaupun func yg dieksekusi sebelumnya error
 	//panic func = digunakan utk menghentikan program dan dipakai ketika terjadi error saat program sedang berjalan. namun,ketika func panic dipanggil,program berhenti, tapi ketika menggunakan defer, maka defer func akan tetap dieksekusi
+	// recover func = digunakan utk menangkap panic. proses panic akan berhenti, shg program ttp berjalan
 
 	runApplication(10)
 	runApp(true)
