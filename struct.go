@@ -10,7 +10,7 @@ type Customer struct { //utk struct, rata" namanya diawalai dengan huruf kapital
 }
 
 // struct method(1)
-func sayStruct(customer Customer, name string) {
+func (customer Customer) sayStruct(name string) {
 	fmt.Println("Hello ", name, "My Name is ", customer.Nama)
 }
 
@@ -44,5 +44,6 @@ func main() {
 	fmt.Println(Pandan)
 
 	//struct method (1)
-	sayStruct(nupnup, "Nopnop") //pemanggilan tanpa tanpa struct
+	// sayStruct(nupnup, "Nopnop") //pemanggilan tanpa tanpa struct
+	nupnup.sayStruct("Nopnop ")
 }
