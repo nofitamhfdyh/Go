@@ -6,6 +6,7 @@ import "fmt"
 type Customer struct { //utk struct, rata" namanya diawalai dengan huruf kapital. kalau ada 2 kata, brti 2 huruf paling depan kapital
 	Nama, Alamat string
 	Umur         int
+	Status       bool
 }
 
 func main() {
@@ -33,6 +34,7 @@ func main() {
 	fmt.Println(Farhan)
 
 	//(3) struct literals
-	Pandan := Customer{"Pandan Zahwa Azizah", "Sukoharjo, Solo", 23} // bisa seperti ini yang penting urutan sesuai
+	Pandan := Customer{"Pandan Zahwa Azizah", "Sukoharjo, Solo", 23} // bisa seperti ini yang penting urutan sesuai. kelemahannya, ketika didalam struct ditambah value baru, dia akan otomatis error
+	//error juga ketika urutan deklarasi struct dibalik
 	fmt.Println(Pandan)
 }
