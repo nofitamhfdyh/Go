@@ -9,6 +9,11 @@ type Customer struct { //utk struct, rata" namanya diawalai dengan huruf kapital
 	//Status       bool
 }
 
+// struct method(1)
+func sayStruct(customer Customer, name string) {
+	fmt.Println("Hello ", name, "My Name is ", customer.Nama)
+}
+
 func main() {
 	// mmenggabungkan nol / lebih data yang tipenya beda dalam 1 kesatuan.
 	// sangat cocok utk merepresentasikan data daripada memakai map atau array, karena strukturnya lebih bagus
@@ -37,4 +42,7 @@ func main() {
 	Pandan := Customer{"Pandan Zahwa Azizah", "Sukoharjo, Solo", 23} // bisa seperti ini yang penting urutan sesuai. kelemahannya, ketika didalam struct ditambah value baru, dia akan otomatis error
 	//error juga ketika urutan deklarasi struct dibalik
 	fmt.Println(Pandan)
+
+	//struct method (1)
+	sayStruct(nupnup, "Nopnop") //pemanggilan tanpa tanpa struct
 }
