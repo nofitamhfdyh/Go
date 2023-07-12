@@ -14,6 +14,10 @@ func (customer Customer) sayStruct(name string) {
 	fmt.Println("Hello ", name, "My Name is ", customer.Nama)
 }
 
+func (aaa Customer) sayAAA() {
+	fmt.Println("Say huuu", aaa.Nama)
+}
+
 func main() {
 	// mmenggabungkan nol / lebih data yang tipenya beda dalam 1 kesatuan.
 	// sangat cocok utk merepresentasikan data daripada memakai map atau array, karena strukturnya lebih bagus
@@ -46,4 +50,6 @@ func main() {
 	//struct method (1)
 	// sayStruct(nupnup, "Nopnop") //pemanggilan tanpa tanpa struct
 	nupnup.sayStruct("Nopnop ")
+
+	nupnup.sayAAA()
 }
