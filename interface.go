@@ -17,8 +17,20 @@ func (person Person) GetName() string {
 func SayHello(hashName HashName) { //interface juga bisa digunakan sebagai parameter di func
 	fmt.Println("Hello", hashName.GetName())
 }
+
+type Animal struct {
+	Name string
+}
+
+func (animal Animal) GetName() string {
+	return animal.Name
+}
+
 func main() {
 	//didalam interface, isinya hanya definisi method saja, only untuk kontrak
 	person := Person{Name: "Nofita Mahfudiyah"}
 	SayHello(person)
+
+	animal := Animal{Name: "Kelinci"} // walaupun structnya berbeda, tapi interface / kontraknya bisa dipakai bersama
+	SayHello(animal)
 }
