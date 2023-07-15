@@ -1,4 +1,4 @@
-package helper
+package other
 
 func SayHello(name string) {
 	//jika ada function yang namanya sama, dan masih berada dalam 1 folder/package -> error / tidak boleh
