@@ -10,6 +10,7 @@ var connection string
 */
 
 func init() { //(1)
+	// fmt.Println("Init Sukses Dipanggil") //untuk memastikan penggunaan blank identifier berhasil
 	connection = "MYSQL"
 }
 
