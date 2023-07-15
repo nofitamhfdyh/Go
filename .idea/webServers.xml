@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d283f193-1b4e-478c-8f2b-291d0eac539c" name="https://github.com/nofitamhfdyh/Golang.git" url="http://github.com/nofitamhfdyh/Golang.git">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
