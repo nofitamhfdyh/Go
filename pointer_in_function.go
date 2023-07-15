@@ -6,7 +6,7 @@ type Alamat struct {
 	Kota, Provinsi, Negara string
 }
 
-func ChangeAddressToIndonesia(address Alamat) {
+func ChangeAddressToIndonesia(address *Alamat) {
 	address.Negara = "Indonesia"
 }
 func main() {
@@ -20,7 +20,13 @@ func main() {
 		Provinsi: "Jawa Timur",
 		Negara:   "",
 	}
-	ChangeAddressToIndonesia(addres)
+	//cara memanggil 1
+	ChangeAddressToIndonesia(&addres)
 
 	fmt.Println(addres) // tidak berubah, karena yang dikirim adalah data copyan value nya
+
+	//cara memanggil 2
+	var alamatPointer *Alamat = &addres
+	ChangeAddressToIndonesia(alamatPointer)
+	fmt.Println(alamatPointer)
 }
