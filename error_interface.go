@@ -18,7 +18,7 @@ func main() {
 	//go lang memiliki interface yang digunakan sbg kontrak untuk membuat error, nama interfacenya adalah error
 	//var cthError error = errors.New("Ups Error")
 	//fmt.Println(cthError.Error())
-	hasil, err := Pembagian(100, 10)
+	hasil, err := Pembagian(100, 0)
 	if err == nil {
 		fmt.Println("Hasil ", hasil)
 	} else {
