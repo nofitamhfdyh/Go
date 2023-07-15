@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="d283f193-1b4e-478c-8f2b-291d0eac539c" name="https://github.com/nofitamhfdyh/Golang.git" url="http://github.com/nofitamhfdyh/Golang.git">
+      <webServer id="d283f193-1b4e-478c-8f2b-291d0eac539c" name="https://github.com/nofitamhfdyh/Golang.git" url="">
         <fileTransfer accessType="LOCAL" port="0" />
       </webServer>
     </option>
