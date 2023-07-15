@@ -19,6 +19,9 @@ func main() {
 	// seluruh variabel yang mengacu ke data yang sama tidak akan berubah
 	// jika ingin mengubah seluruh variable yang mengacu ke data tsb, menggunakan --> operator * (3)
 
+	// sebelum membuat pointer menggunakan operator &, golang memiliki function new -> digunakan untuk membuat pointer
+	// tapi, function new (4) hanya mengembalikan pointer ke data kosong -> jadi tidak ada data awal
+
 	//(1)
 	address1 := Address{
 		Kecamatan: "Kademangan",
@@ -41,4 +44,11 @@ func main() {
 	fmt.Println(address1) //tidak berubah isinya, tetap -> ini yang dimaksud dengan pass by value (1)
 	fmt.Println(address2) //didepannya jadi ada & -> memberitahu bahwa kalau address 2 itu pointer -> cara cek nya klik ctrl + spasi
 	fmt.Println(address3)
+
+	//(4)
+	address4 := new(Address)
+
+	address4.Kota = "Jogja"
+
+	fmt.Println(address4)
 }
